@@ -1,0 +1,25 @@
+
+.App{
+    color: aliceblue;
+    text-align: center;
+}
+
+
+.title{
+    background-color: aqua;
+    border-top: 2px solid white;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    padding-left: 150px;
+
+  
+}
+
+
+
+
+

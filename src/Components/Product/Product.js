@@ -50,6 +50,7 @@ const productsArray = [
       title= {product.title}
       img={product.imageUrl}
       price={product.price}
+      quantity={product.quantity}
       />
     ))
   

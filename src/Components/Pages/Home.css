@@ -1,0 +1,49 @@
+.home h3{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Trattatello', cursive;
+}
+
+.table-list{
+    padding-top: 30px;
+    padding-left: 25%;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 90%;
+
+   
+    
+}
+
+td{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+.street{
+    color: gray;
+}
+
+.address{
+    color: gray;
+}
+
+.buy button{
+    margin-left: 40%;
+    height: 35px;
+    background-color: rgb(17, 199, 199);
+    border: none;
+    width: 150px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.buy td{
+    text-align: right;
+}

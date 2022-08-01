@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../UI/Card';
+
 import ShopItem from './ShopItem';
 
 import classes from './AvailableItem.module.css'
@@ -45,12 +45,10 @@ const AvailableItem = () =>{
     
     return (
         <React.Fragment>
-        <section className={classes.items}>
-           {itemList}
-           
-        </section>
-        <button className={classes.cartbtn}>See the cart</button>
-
+    <div>
+    <h3 className={classes.product}>Music</h3>
+       <ul className={classes.container}>{itemList}</ul>
+    </div>
         </React.Fragment>
     )
 }

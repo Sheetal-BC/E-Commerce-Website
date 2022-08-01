@@ -32,10 +32,12 @@
 
 
 }
-.img{
+.cartimg{
     width: 70px;
     display: inline-block;
     margin-right:7px;
+    border-radius: 10px;
+
 
 }
 .remove-button{

@@ -1,35 +1,19 @@
-import React, {} from 'react';
-import {
-  Nav,
-  NavLink,
-  NavMenu,
-  NavBtn,
-  NavGen,
-  Navbadge
+import React from "react";
 
-} from './NavbarElement';
+import HeaderCartButton from "../Layout/HeaderCartButton";
+import { Nav, NavLink, NavMenu, NavGen } from "./NavbarElement";
 
 const Navbar = (props) => {
   return (
     <header>
       <Nav>
         <NavMenu>
-          <NavLink to='/Home'>
-            HOME
-          </NavLink>
-          <NavLink to='/Store'>
-            STORE
-          </NavLink>
-          <NavLink to='/about'>
-           ABOUT
-          </NavLink>
-         </NavMenu>
-    
-         <NavBtn  onClick={props.Cart}>
-          cart 
-        </NavBtn>
-        <Navbadge>0</Navbadge>
-      
+          <NavLink to="/Home">HOME</NavLink>
+          <NavLink to="/Store">STORE</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
+        </NavMenu>
+
+        <HeaderCartButton onClick={props.onShowCart}/>
       </Nav>
       <NavGen>
         <h1>The Generics</h1>
@@ -38,4 +22,4 @@ const Navbar = (props) => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

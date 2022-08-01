@@ -1,24 +1,25 @@
 .badge{
-    float: right;
+    position: absolute;
+    top: -20;
+    right: -45px;
+    padding: 1px 50px;
     color: aqua;
     font-size: 20px;
-  
+   
   }
 
-.cart {
+.cart{
     cursor: pointer;
-    font: inherit;
-    border:solid;
-    border-color: aqua;
+    border: 2px solid aqua;
     background-color: black;
     color: white;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    float:right;
-    height: 30px;
-    width: 50px;
     border-radius:5px;
-    padding-bottom: 10px;
+    font-size: 20px;
+    margin: auto;
+    position: absolute;
+    right:20px;
+    top: 30px;
+    width: 40px;
+    text-align: center;
+ 
   }
-
-  

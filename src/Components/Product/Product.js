@@ -59,7 +59,7 @@ const productsArray = [
       <h3 className="product">MUSIC</h3>
          <ul className="Product-container">{productsList}</ul>
       </div>
-      <button className="cart-button" onClick={props.Cart}>See the cart</button>
+      <button className="cart-button">See the cart</button>
   </React.Fragment>
   )}
   

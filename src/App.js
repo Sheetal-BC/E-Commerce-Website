@@ -5,6 +5,7 @@ import { BrowserRouter as Router} from 'react-router-dom';
 import AvaiableProducts from './Components/Product/Product';
 import Footer from './Components/Footer/Footer';
 import Cart from './Components/Cart/Cart';
+import CartProvider from './Store/CartProvider';
 
 
 
@@ -19,16 +20,16 @@ function App() {
      setCart(true);
   }
   return (
-    <React.Fragment>
+    <CartProvider>
     <Router>
-      <Navbar Cart={showHandler}/>
+   <Navbar onShowCart={showHandler}/>
       
     </Router>
     {cart && <Cart onClick={hideHandler}/>}
    <AvaiableProducts/>
     <Footer/>
 
-    </React.Fragment>
+    </CartProvider>
   );
 }
 

@@ -1,0 +1,47 @@
+.tilte_page{
+    margin:30px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trattatello', cursive;
+}
+
+.details{
+    margin: auto;
+    background-color: lightgrey;
+    width:30rem;
+    height: 20rem;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+}
+.control label{
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+.control input{
+    width: 28rem;
+    height: 30px;
+    margin: 10px 0px ;
+    font-size: 20px;
+}
+
+
+
+.submit_button{
+    margin-left: 40%;
+    height: 40px;
+    background-color: rgb(17, 199, 199);
+    margin-top: 20px;
+    border: none;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submit_button:hover{
+    background-color: rgb(19, 134, 150);
+}

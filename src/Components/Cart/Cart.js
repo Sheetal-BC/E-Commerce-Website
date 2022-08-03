@@ -59,7 +59,7 @@ const Cart = (props) => {
     <Fragment>
       <div className="cart">
         <h3 className="cartName">Cart</h3>
-        <button className="cart__Button" onClick={props.onClick}>
+        <button className="cart__Button" onClick={props.onClose}>
           X
         </button>
         <div className="cart-row cart-header">

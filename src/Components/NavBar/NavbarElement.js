@@ -22,11 +22,12 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  padding-left: 30px;
- padding-right: 60px;
+  padding-left: 20px;
+ padding-right: 30px;
   height: 100%;
+  width: 200px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 15px;
   &.active {
     color: #15cdfc;
   }
@@ -49,7 +50,7 @@ export const NavGen = styled.div`
   font-family:'Times New Roman'; 
 `;
 
-export const styles = styled.div`
+export const style = styled.div`
   fontSize: 14,
   color: "#4a54f1",
   textAlign: "center",

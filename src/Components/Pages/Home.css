@@ -7,16 +7,13 @@
 
 .table-list{
     padding-top: 30px;
-    padding-left: 25%;
+    padding-left: 15%;
     
 }
 
 table {
     border-collapse: collapse;
-    width: 90%;
-
-   
-    
+    width: 80%;
 }
 
 td{

@@ -42,7 +42,7 @@ const productsArray = [
   
   ];
   
-  const AvaiableProducts =(props)=>{
+  const AvaiableProducts =()=>{
     const productsList= productsArray.map(product=>(
       <ProductList
       id={product.id}

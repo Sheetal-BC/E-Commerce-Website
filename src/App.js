@@ -9,6 +9,7 @@ import About from './Components/Pages/About';
 import Store from './Components/Pages/Store';
 import Home from './Components/Pages/Home';
 import ContactUs from './Components/Pages/ContactUs';
+import ProductDetail from './Components/Pages/ProductDetail';
 
 
 
@@ -26,6 +27,7 @@ function App() {
   };
   return (
     <CartProvider>
+  
     <Router>
     <Navbar onShowCart={showCartHandler}/>
     <Routes>
@@ -33,14 +35,18 @@ function App() {
     <Route path='/Store' element={<Store/>} />
     <Route path='/Home' element={<Home/>} />
     <Route path='/Contact' element={<ContactUs/>} />
+    <Route path="/Store/:productId" element={<ProductDetail />} />
     </Routes>
   
       
     </Router>
     
+    
     {cartIsShown && <Cart onClose={hideCartHandler}/>}
    
     <Footer/>
+    
+    
 
     </CartProvider>
   );

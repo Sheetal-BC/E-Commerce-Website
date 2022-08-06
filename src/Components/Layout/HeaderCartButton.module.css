@@ -1,6 +1,6 @@
 .badge{
     position: absolute;
-    top: -20;
+    top: -1px;
     right: -45px;
     padding: 1px 50px;
     color: aqua;
@@ -10,7 +10,7 @@
 
 .cart{
     cursor: pointer;
-    border: 2px solid aqua;
+    border: 1px solid aqua;
     background-color: black;
     color: white;
     border-radius:5px;
@@ -18,8 +18,8 @@
     margin: auto;
     position: absolute;
     right:20px;
-    top: 30px;
-    width: 40px;
+    top: 15px;
+    width: 55px;
     text-align: center;
  
   }

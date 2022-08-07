@@ -1,5 +1,5 @@
 import React, {useState, useRef, useContext} from "react";
-import { useNavigate} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import AuthContext from "../../Store/AuthContext";
 
 
@@ -10,7 +10,7 @@ import './AuthPage.css';
 
 
 const AuthPage = () => {
-    const navigate = useNavigate();
+  const navigate = useNavigate();
     
     const emailInputRef = useRef();
     const passwordInputRef = useRef();
@@ -73,8 +73,8 @@ const AuthPage = () => {
           .then((data) => {
             
             authCntxt.login(data.idToken);
-            navigate('/Store')
-            
+       
+            navigate('../Store');
             
           })
           .catch((err) => {

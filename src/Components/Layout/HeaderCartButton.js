@@ -8,7 +8,8 @@ const HeaderCartButton = (props) => {
   cartCntxt.items.forEach((element) => {
     total = total + Number(element.quantity);
   });
-  console.log(cartCntxt);
+
+
 
   return (
     <Fragment>

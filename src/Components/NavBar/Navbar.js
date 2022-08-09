@@ -1,5 +1,8 @@
 import React,{useContext} from "react";
 import { NavLink } from "react-router-dom";
+
+import CartContext from "../../Store/CartContext";
+
 import './NavbarElement.css';
 
 import HeaderCartButton from "../Layout/HeaderCartButton";
@@ -8,11 +11,31 @@ import AuthContext from "../../Store/AuthContext";
 
 const Navbar = (props) => {
   const authCntxt = useContext(AuthContext);
-
+  const cartCtx = useContext(CartContext)
+  const email=localStorage.getItem('Email');
+  
+  console.log(email)
+  if(!email === null)
+   email.replace( /[^\w]/g, '');
+ 
   const isLoggedIn = authCntxt.isLoggedIn;
 
-  const logoutHandler = () =>{
+  const logoutHandler = async () =>{
+   
     authCntxt.logout();
+   
+    const response = await fetch(
+      "https://userdetails-bc548-default-rtdb.firebaseio.com/Contacts.json",
+      {
+        method: "POST",
+        body: JSON.stringify(cartCtx.items),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    const data = await response.json();
+    console.log(data);
   }
 
   return (

@@ -1,25 +1,28 @@
 import React, { useContext } from "react";
-
 import {  NavLink } from "react-router-dom";
 import CartContext from "../../Store/CartContext";
-
 import './ProductList.css'
 
 const ProductList = (props) => {
   const cartCntxt = useContext(CartContext);
-
+ 
+ 
+ 
     
    
-    const addToCart = (event) => {
+    const addToCart =  async (event) => {
       event.preventDefault();
+      console.log('props', props);
       const arr = {
         id: props.id,
         title: props.title,
         imgsrc: props.img,
         price: props.price,
-        quantity: 1
+        quantity:props.quantity
       };
       cartCntxt.addItem(arr);
+
+      
     };
 
     const imgsrc = props.img;

@@ -54,6 +54,7 @@ const AuthPage = () => {
         })
         .then((res) => {
             setIsLoading(false);
+            
             if (res.ok) {
               return res.json();
               
@@ -73,7 +74,7 @@ const AuthPage = () => {
           .then((data) => {
             
             authCntxt.login(data.idToken);
-       
+          localStorage.setItem('Email', emailEntered)
             navigate('../Store');
             
           })
